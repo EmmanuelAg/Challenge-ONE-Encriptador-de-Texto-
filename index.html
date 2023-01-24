@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.8.6/clipboard-polyfill.js"></script>
+    <title>Encriptador de Texto Alura</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo de Alura">
+        <h1 class="title">Challenge ONE: Encriptador de Texto</h1>
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="50" rows="12" placeholder="Ingrese el Texto a Encriptar" type="text"></textarea>
+            <div>
+                <h6 class="information"><span class="glyphicon glyphicon-info-sign"></span> &nbsp; Solo ingrese texto en
+                    minúsculas y omita los acentos.</h6>
+            </div>
+            <div class="buttons">
+                <button class="button-encrypt" onclick="buttonEncrypt()">Encriptar</button>
+                <button class="button-decrypt" onclick="buttonDecrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="message" cols="20" rows="10" disabled></textarea>
+            <div>
+                <h3 class="alert">Ningún mensaje fue encontrado</h3>
+                <p class="message-alert">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="button-copy" onclick="buttonCopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
